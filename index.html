@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirect to Google</title>
+  <script>
+    // Function to handle keypress event
+    function handleKeyPress(event) {
+      if (event.key === "`") { // Check if backtick key was pressed
+        window.location.href = "https://www.google.com"; // Redirect to Google
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Press the backtick key (`) to redirect to Google</h1>
+  <script>
+    // Attach event listener to capture keypress events
+    document.addEventListener("keypress", handleKeyPress);
+  </script>
+</body>
+</html>
