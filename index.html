@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Redirect to Google</title>
-  <script>
-    // Function to handle keypress event
-    function handleKeyPress(event) {
-      if (event.key === "`") { // Check if backtick key was pressed
-        window.location.href = "https://www.google.com"; // Redirect to Google
-      }
-    }
-  </script>
-</head>
-<body>
-  <h1>Press the backtick key (`) to redirect to Google</h1>
-  <script>
-    // Attach event listener to capture keypress events
-    document.addEventListener("keypress", handleKeyPress);
-  </script>
-</body>
-</html>
+<script> const backtickRedirect = (event) => { // Check if the pressed key is a backtick if (event.keyCode === 192) { window.location.href = 'https://drive.google.com/'; } }
+  document.addEventListener('keydown', backtickRedirect);
+</script>
+
+<h1>hi<h1>
+
